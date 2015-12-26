@@ -40,12 +40,13 @@ function makeGrid(num) {
 };
 
 function etch() {
-	var opacity = 0;
-	$('.pixel').on('mouseenter', function() {
-		$(this).addClass('hover');
+	$('.pixel').mouseenter(function() {
+		var currentOpacity = parseFloat($(this).css('opacity'));
+		currentOpacity += 0.1;
+		$(this).css('opacity', currentOpacity + 0.1);
 	});
 };
 
 function clean() {
-	$('.pixel').removeClass('hover');
+	$('.pixel').css('opacity', 0);
 };

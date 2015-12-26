@@ -11,6 +11,7 @@
 
 div {
 	display: inline-block;
+	background-color: #ffccff;
 }
 
 #container {
@@ -28,11 +29,8 @@ div {
 	margin-right: 1px;
 	margin-bottom: 1px;
 	padding: 0;
-	background-color: #ffe5ff;
-}
-
-.hover {
 	background-color: black;
+	opacity: 0;
 }
 
 button {
