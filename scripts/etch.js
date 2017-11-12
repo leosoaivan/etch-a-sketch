@@ -7,12 +7,13 @@ $(document).ready(function() {
 
 $('#change').click(function() {
 	$('#container').empty();
-	var newLength = prompt("How many rows/columns do you want, from 1 to 64?");
+	var newLength = prompt("How many rows/columns do you want, from 2 to 64?");
 	if (isNaN(newLength) === true) {
 		alert("Try again");
 	}
-	else if (newLength >= 1 && newLength <= 64) {
+	else if (newLength >= 2 && newLength <= 64) {
 		makeGrid(newLength);
+		etch();
 	}
 	else {alert("Try again")}
 	etch();

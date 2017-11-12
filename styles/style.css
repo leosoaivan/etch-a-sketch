@@ -9,20 +9,18 @@
 	text-align: center;
 }
 
-div {
-	display: inline-block;
-	background-color: #ffccff;
-}
-
 #container {
 	width: 600px;
-	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
 	border: 0;
 	padding: 0;
 	font-size: 0;
+	background-color: #ffccff;
 }
 
 .pixel {
+	display: inline-block;
 	height: 60px;
 	width: 60px;
 	border: 0;
@@ -35,6 +33,8 @@ div {
 
 button {
 	text-align: center;
-	padding: 7px;
+	padding: 10px;
 	border-radius: 5px;
+	margin: 10px;
+	width: 100px;
 }
