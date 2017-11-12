@@ -43,7 +43,6 @@ function makeGrid(num) {
 function etch() {
 	$('.pixel').mouseenter(function() {
 		var currentOpacity = parseFloat($(this).css('opacity'));
-		currentOpacity += 0.1;
 		$(this).css('opacity', currentOpacity + 0.1);
 	});
 };
